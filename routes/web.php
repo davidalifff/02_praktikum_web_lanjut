@@ -14,5 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    echo('Selamat datang');
 });
+
+Route::get('/about',function(){
+    echo('Mochamad Nur Alif <br> 2041720246 <br> 2D');
+});
+
+Route::get('/articles/1', function(){
+    echo('halaman artikel dengan id 1');
+});
+
+Route::get('/articles/2', function(){
+    echo('halaman artikel dengan id 2');
+});
+
